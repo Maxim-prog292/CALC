@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(238, 233, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc {
+    width: 450px;
+    height: 600px;
+    border: 1px solid #808080;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.screen {
+    width: inherit;
+    height: 20%;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    font-size: 78px;
+    text-align: end;
+    font-family: sans-serif;
+    border-radius: 10px 10px 0 0;
+}
+.history {
+    width: 20%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.history span {
+    cursor: pointer;
+}
+.out {
+    width: 80%;
+}
+.buttons {
+    width: inherit;
+    height: 80%;
+    background: #000000;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 0 0 10px 10px;
+}
+.buttons button {
+    width: 95%;
+    height: 95%;
+    background: #ebebeb;
+    border: 2px solid black;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border: none;
+}
+.buttons .sign {
+    background: #ff7433;
+    color:#fff;
+}
+.buttons .num, .buttons .dot, .buttons .clear {
+    background: #fff;
+    color: #ff7433;
+}
+.buttons .sign:hover {
+    background: #ff9463;
+}
+.buttons button:hover {
+    background: #d5d5d5;
+}
+.buttons button:active {
+    width: 93%;
+    height: 93%;
+    font-size: 24px;
+}
+.buttons .equa {
+    grid-row: 5/6;
+    grid-column: 4/6;
+}
+.zero {
+    grid-row: 5/6;
+    grid-column: 1/3;
+}
